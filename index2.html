@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vex Protocol - On-Chain Volatility Oracle</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VEX</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#cvx" class="nav-link">CVX Index</a>
+                <a href="#technology" class="nav-link">Technology</a>
+                <a href="#docs" class="nav-link">Docs</a>
+                <a href="#community" class="nav-link">Community</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-text">LIVE ON ARBITRUM</span>
+            </div>
+            <h1 class="hero-title">
+                The On-Chain
+                <span class="gradient-text">Volatility Oracle</span>
+            </h1>
+            <p class="hero-description">
+                Vex delivers the first crypto-native VIX — the market's on-chain "fear gauge." 
+                Build sophisticated derivatives with real-time volatility data.
+            </p>
+            <div class="hero-buttons">
+                <a href="#docs" class="btn btn-primary">
+                    <span>View Litepaper</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="#cvx" class="btn btn-secondary">
+                    Live CVX Dashboard
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="chart-container">
+                <canvas id="volatilityChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- CVX Index Section -->
+    <section id="cvx" class="cvx-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Live Crypto Volatility Index (CVX)</h2>
+                <p>Real-time market fear gauge, computed on-chain</p>
+            </div>
+            <div class="cvx-widget">
+                <div class="cvx-value">
+                    <span class="value">42.67</span>
+                    <span class="label">CVX Index</span>
+                </div>
+                <div class="cvx-change positive">
+                    <span class="arrow">↗</span>
+                    <span class="change">+2.34</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built for DeFi's Future</h2>
+                <p>Advanced methodology meets blockchain resilience</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">📊</div>
+                    <h3>MFIV Methodology</h3>
+                    <p>Model-Free Implied Volatility adapted for crypto markets, using Deribit, Lyra, and perp futures data.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🛡️</div>
+                    <h3>Manipulation Resistant</h3>
+                    <p>Multi-source data aggregation and on-chain computation prevent single-point manipulation.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">⚡</div>
+                    <h3>Real-time Updates</h3>
+                    <p>CVX index updates continuously, providing accurate volatility pricing for derivatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build the Future of DeFi Derivatives?</h2>
+                <p>Integrate the CVX index and unlock sophisticated volatility-based products.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Documentation</a>
+                    <a href="#" class="btn btn-secondary">Join Community</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">VEX</span>
+                    <p>The On-Chain Volatility Oracle</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">Telegram</a>
+                    <a href="#" class="social-link">Discord</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vex Protocol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
